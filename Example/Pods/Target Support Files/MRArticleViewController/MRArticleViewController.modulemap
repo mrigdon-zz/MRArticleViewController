@@ -1,0 +1,6 @@
+framework module MRArticleViewController {
+  umbrella header "MRArticleViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "MRArticleViewController",
+  "version": "0.1.0",
+  "summary": "A short description of MRArticleViewController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MRArticleViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Matthew Rigdon": "rigdonmr@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MRArticleViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MRArticleViewController/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ],
+    "UIImageColors": [
+
+    ]
+  }
+}

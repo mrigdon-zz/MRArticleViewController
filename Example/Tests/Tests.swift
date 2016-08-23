@@ -6,43 +6,48 @@ import MRArticleViewController
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("ArticleViewController", {
+            
+            let articleVC = ArticleViewController()
+            
+            describe("image") {
+                context("before setting") {
+                    it("is nil") {
+                        expect(articleVC.image) == nil
+                    }
+                }
+                context("after setting") {
+                    articleVC.image = UIImage()
+                    it("is not nil") {
+                        expect(articleVC.image) != nil
+                    }
+                }
+            }
+            
+        })
+        
+        describe("these will pass") {
 
             it("can do maths") {
-                expect(1) == 2
+                expect(24) == 23
             }
 
             it("can read") {
-                expect("number") == "string"
+                expect("🐮") == "🐮"
             }
 
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
-            
-            context("these will pass") {
+            it("will eventually pass") {
+                var time = "passing"
 
-                it("can do maths") {
-                    expect(23) == 23
+                dispatch_async(dispatch_get_main_queue()) {
+                    time = "done"
                 }
 
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
+                waitUntil { done in
+                    NSThread.sleepForTimeInterval(0.5)
+                    expect(time) == "done"
 
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    dispatch_async(dispatch_get_main_queue()) {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        NSThread.sleepForTimeInterval(0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
+                    done()
                 }
             }
         }
