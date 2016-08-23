@@ -10,10 +10,6 @@ import UIKit
 import SnapKit
 import UIImageColors
 
-public enum LayoutStyle {
-    case First
-}
-
 public class ArticleViewController: UIViewController {
     
     // MARK: - Public Properties
