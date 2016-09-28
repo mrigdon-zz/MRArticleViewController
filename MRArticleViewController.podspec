@@ -22,7 +22,7 @@ This framework allows you to easily setup View Controllers to display News Artic
                        DESC
 
   s.homepage         = 'https://github.com/mrigdon/MRArticleViewController'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'http://imgur.com/a/Bx3gY', 'http://imgur.com/a/u4VYm'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Matthew Rigdon' => 'rigdonmr@gmail.com' }
   s.source           = { :git => 'https://github.com/mrigdon/MRArticleViewController.git', :tag => s.version.to_s }
