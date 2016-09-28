@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		75722457BC55AF05274B3312 /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C93F457A957BB5E9BEF5F /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */; };
 		A43862955FB124E82FF26D52 /* Pods_MRArticleViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6A5F50E8356542072FCB85 /* Pods_MRArticleViewController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		01B74063EF092A16D9E5A982 /* Pods-MRArticleViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRArticleViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRArticleViewController_Example/Pods-MRArticleViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0E6A5F50E8356542072FCB85 /* Pods_MRArticleViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRArticleViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4C93F457A957BB5E9BEF5F /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A4BE7DEAA09EA554DB5AA1 /* Pods-MRArticleViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRArticleViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRArticleViewController_Tests/Pods-MRArticleViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MRArticleViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRArticleViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		607FACE51AFB9204008FA782 /* MRArticleViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRArticleViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6A90D548FEBD31964881CF5B /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRArticleViewController_Example-MRArticleViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRArticleViewController_Example-MRArticleViewController_Tests/Pods-MRArticleViewController_Example-MRArticleViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93D3437284421506848B50E2 /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRArticleViewController_Example-MRArticleViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRArticleViewController_Example-MRArticleViewController_Tests/Pods-MRArticleViewController_Example-MRArticleViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A7002EBC8FBABB8139161E2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9AA7F4D0ACFAFBFB7F47BE57 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AC3175B20714CCE76F7ECFD3 /* Pods_MRArticleViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRArticleViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43862955FB124E82FF26D52 /* Pods_MRArticleViewController_Tests.framework in Frameworks */,
+				75722457BC55AF05274B3312 /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,8 @@
 				AFBB7D673B9A5402352822BC /* Pods-MRArticleViewController_Example.release.xcconfig */,
 				44A4BE7DEAA09EA554DB5AA1 /* Pods-MRArticleViewController_Tests.debug.xcconfig */,
 				E3568CA222E8ACF61373B627 /* Pods-MRArticleViewController_Tests.release.xcconfig */,
+				6A90D548FEBD31964881CF5B /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests.debug.xcconfig */,
+				93D3437284421506848B50E2 /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 			children = (
 				AC3175B20714CCE76F7ECFD3 /* Pods_MRArticleViewController_Example.framework */,
 				0E6A5F50E8356542072FCB85 /* Pods_MRArticleViewController_Tests.framework */,
+				3F4C93F457A957BB5E9BEF5F /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -274,7 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRArticleViewController_Tests/Pods-MRArticleViewController_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRArticleViewController_Example-MRArticleViewController_Tests/Pods-MRArticleViewController_Example-MRArticleViewController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3226A8016A10D0DEC6A82E8A /* [CP] Copy Pods Resources */ = {
@@ -289,7 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRArticleViewController_Tests/Pods-MRArticleViewController_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRArticleViewController_Example-MRArticleViewController_Tests/Pods-MRArticleViewController_Example-MRArticleViewController_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72047C8AE140463B6E422EB4 /* [CP] Copy Pods Resources */ = {
@@ -514,7 +522,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44A4BE7DEAA09EA554DB5AA1 /* Pods-MRArticleViewController_Tests.debug.xcconfig */;
+			baseConfigurationReference = 6A90D548FEBD31964881CF5B /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -533,7 +541,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3568CA222E8ACF61373B627 /* Pods-MRArticleViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = 93D3437284421506848B50E2 /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
