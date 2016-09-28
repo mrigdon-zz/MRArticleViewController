@@ -8,6 +8,7 @@
 This framework allows you to easily setup View Controllers to display News Articles inspired by those from the Apple News App. Simply set the required fields and run, and you will have a nice looking view for your articles.
 
 ![Preview](https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview1.png)
+![Preview](https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview2.png)
 
 ## Example
 
