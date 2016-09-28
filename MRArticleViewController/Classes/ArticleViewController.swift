@@ -49,6 +49,42 @@ public class ArticleViewController: UIViewController {
         }
     }
     
+    public var backgroundColor: UIColor = UIColor.whiteColor() {
+        didSet {
+            backgroundColorSet = true
+            backgroundView.backgroundColor = backgroundColor
+            view.backgroundColor = backgroundColor
+        }
+    }
+    
+    public var headlineColor: UIColor = UIColor.blackColor() {
+        didSet {
+            headlineColorSet = true
+            headlineLabel.textColor = headlineColor
+        }
+    }
+    
+    public var dateColor: UIColor = UIColor.blackColor() {
+        didSet {
+            dateColorSet = true
+            dateLabel.textColor = dateColor
+        }
+    }
+    
+    public var authorColor: UIColor = UIColor.blackColor() {
+        didSet {
+            authorColorSet = true
+            authorLabel.textColor = authorColor
+        }
+    }
+    
+    public var bodyColor: UIColor = UIColor.blackColor() {
+        didSet {
+            bodyColorSet = true
+            bodyLabel.textColor = bodyColor
+        }
+    }
+    
     // MARK: - Private Properties
     
     private let scrollView = UIScrollView()
@@ -59,6 +95,12 @@ public class ArticleViewController: UIViewController {
     private let dateLabel = UILabel()
     private let divider = UIView()
     private let bodyLabel = UILabel()
+    
+    private var backgroundColorSet = false
+    private var headlineColorSet = false
+    private var dateColorSet = false
+    private var authorColorSet = false
+    private var bodyColorSet = false
 
     // MARK: - UIViewController
     
@@ -68,27 +110,16 @@ public class ArticleViewController: UIViewController {
         // if autoColored, setup after extracting color; otherwise, setup now.
         if autoColored {
             image.getColors { colors in
-                self.backgroundView.backgroundColor = colors.backgroundColor
-                self.view.backgroundColor = colors.backgroundColor
-                self.headlineLabel.textColor = colors.primaryColor
-                self.dateLabel.textColor = colors.detailColor
-                self.authorLabel.textColor = colors.secondaryColor
-                self.bodyLabel.textColor = colors.detailColor
+                self.backgroundColor = self.backgroundColorSet ? self.backgroundColor : colors.backgroundColor
+                self.headlineColor = self.headlineColorSet ? self.headlineColor : colors.primaryColor
+                self.dateColor = self.dateColorSet ? self.dateColor : colors.detailColor
+                self.authorColor = self.authorColorSet ? self.authorColor : colors.secondaryColor
+                self.bodyColor = self.bodyColorSet ? self.bodyColor : colors.detailColor
                 
-                self.setupScrollView()
-                self.setupImageView()
-                self.setupHeadline()
-                self.setupAuthor()
-                self.setupDate()
-                self.setupBody()
+                self.setupUI()
             }
         } else {
-            setupScrollView()
-            setupImageView()
-            setupHeadline()
-            setupAuthor()
-            setupDate()
-            setupBody()
+            setupUI()
         }
     }
 
@@ -97,6 +128,15 @@ public class ArticleViewController: UIViewController {
     }
     
     // MARK: - Private Methods
+    
+    private func setupUI() {
+        setupScrollView()
+        setupImageView()
+        setupHeadline()
+        setupAuthor()
+        setupDate()
+        setupBody()
+    }
     
     private func setupScrollView() {
         view.addSubview(scrollView)
