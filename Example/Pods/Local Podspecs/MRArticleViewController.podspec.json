@@ -2,7 +2,9 @@
   "name": "MRArticleViewController",
   "version": "0.1.0",
   "summary": "Allows you to quickly generate view controllers for news articles similar to those in the News app.",
+  "description": "This framework allows you to easily setup View Controllers to display News Articles inspired by those from the Apple News App. Simply set the required fields and run, and you will have a nice looking view for your articles.",
   "homepage": "https://github.com/mrigdon/MRArticleViewController",
+  "screenshots": "https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview1.png",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -11,7 +13,7 @@
     "Matthew Rigdon": "rigdonmr@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/MRArticleViewController.git",
+    "git": "https://github.com/mrigdon/MRArticleViewController.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -19,9 +21,6 @@
   },
   "source_files": "MRArticleViewController/Classes/**/*",
   "dependencies": {
-    "SnapKit": [
-      "~> 0.22.0"
-    ],
     "UIImageColors": [
 
     ]

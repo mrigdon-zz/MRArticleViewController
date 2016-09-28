@@ -5,7 +5,6 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
   - MRArticleViewController (0.1.0):
-    - SnapKit (~> 0.22.0)
     - UIImageColors
   - Nimble (3.2.0)
   - Nimble-Snapshots (4.1.0):
@@ -13,7 +12,6 @@ PODS:
     - Nimble
     - Quick
   - Quick (0.9.3)
-  - SnapKit (0.22.0)
   - UIImageColors (1.0.4)
 
 DEPENDENCIES:
@@ -29,11 +27,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  MRArticleViewController: 19f76cfc53a77e5793e9dfff4faeba3205e11aaf
+  MRArticleViewController: 8a17d4f2a68d84bd06fe115be25f236c01ad605c
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
   Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
   Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
-  SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
   UIImageColors: ac2a42c61e870849c7fa5b9cbae2744a0873f5f7
 
 PODFILE CHECKSUM: ee70976c9b7ef4ddb6d46e4ef626db72b82bd155
