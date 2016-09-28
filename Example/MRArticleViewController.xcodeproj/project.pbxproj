@@ -15,7 +15,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		75722457BC55AF05274B3312 /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C93F457A957BB5E9BEF5F /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */; };
-		A43862955FB124E82FF26D52 /* Pods_MRArticleViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6A5F50E8356542072FCB85 /* Pods_MRArticleViewController_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		01B74063EF092A16D9E5A982 /* Pods-MRArticleViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRArticleViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRArticleViewController_Example/Pods-MRArticleViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0E6A5F50E8356542072FCB85 /* Pods_MRArticleViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRArticleViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4C93F457A957BB5E9BEF5F /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A4BE7DEAA09EA554DB5AA1 /* Pods-MRArticleViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRArticleViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRArticleViewController_Tests/Pods-MRArticleViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MRArticleViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRArticleViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A43862955FB124E82FF26D52 /* Pods_MRArticleViewController_Tests.framework in Frameworks */,
 				75722457BC55AF05274B3312 /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				AC3175B20714CCE76F7ECFD3 /* Pods_MRArticleViewController_Example.framework */,
-				0E6A5F50E8356542072FCB85 /* Pods_MRArticleViewController_Tests.framework */,
 				3F4C93F457A957BB5E9BEF5F /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */,
 			);
 			name = Frameworks;
