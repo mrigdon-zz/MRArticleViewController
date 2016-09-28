@@ -40,7 +40,7 @@ pod "MRArticleViewController"
   class ViewController: ArticleViewController
   ```
 
-3. In `viewDidLoad`, set the following properties before `super.viewDidLoad()` like so:
+3. In `viewDidLoad`, set the following properties *before* `super.viewDidLoad()` like so:
 
   ```swift
   override func viewDidLoad() {
