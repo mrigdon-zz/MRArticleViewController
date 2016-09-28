@@ -7,7 +7,7 @@ The changelog for `MRArticleViewController`. Also see the [releases](https://git
 0.2.0
 -----
 
-Removed SnapKit Dependency (#1)
+Removed SnapKit Dependency #1
 
 0.1.0
 -----
