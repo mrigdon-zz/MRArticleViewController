@@ -26,6 +26,48 @@ it, simply add the following line to your Podfile:
 pod "MRArticleViewController"
 ```
 
+## Usage
+
+1. Import the module
+
+  ```swift
+  import MRArticleViewController
+  ```
+
+2. Subclass `ArticleViewController`
+
+  ```swift
+  class ViewController: ArticleViewController
+  ```
+
+3. In `viewDidLoad`, set the following properties before `super.viewDidLoad()` like so:
+
+  ```swift
+  override func viewDidLoad() {
+      // required
+      image = UIImage(named: "pulpfiction")!
+      headline = "LA gangsters witness supposed \"Divine Intervention\""
+      author = "Quentin Tarantino"
+      date = NSDate()
+      body = bodyText
+
+      // optional; defaults to false
+      autoColored = true
+
+      super.viewDidLoad()
+  }
+  ```
+  
+Done!
+
+#### More on `autoColor`
+
+This library leverages [UIImageColors](https://github.com/jathu/UIImageColors). Setting `autoColor = true` extracts the colors from the `image` and applies the 
+* background color to the background
+* the primary color to the headline
+* the detail color to the date and body
+* and the secondary color to the author. 
+
 ## Author
 
 Matthew Rigdon, rigdonmr@gmail.com
