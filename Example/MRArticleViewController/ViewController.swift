@@ -8,7 +8,6 @@
 
 import UIKit
 import MRArticleViewController
-import UIImageColors
 
 class ViewController: ArticleViewController {
     
