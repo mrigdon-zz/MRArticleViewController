@@ -1,6 +1,6 @@
 # MRArticleViewController
 
-[![CI Status](http://img.shields.io/travis/mrigdon/MRArticleViewController.svg?style=flat)](https://travis-ci.org/Matthew Rigdon/MRArticleViewController)
+[![CI Status](http://img.shields.io/travis/mrigdon/MRArticleViewController.svg?style=flat)](https://travis-ci.org/mrigdon/MRArticleViewController)
 [![Version](https://img.shields.io/cocoapods/v/MRArticleViewController.svg?style=flat)](http://cocoapods.org/pods/MRArticleViewController)
 [![License](https://img.shields.io/cocoapods/l/MRArticleViewController.svg?style=flat)](http://cocoapods.org/pods/MRArticleViewController)
 [![Platform](https://img.shields.io/cocoapods/p/MRArticleViewController.svg?style=flat)](http://cocoapods.org/pods/MRArticleViewController)
