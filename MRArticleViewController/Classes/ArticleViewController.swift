@@ -16,7 +16,7 @@ public class ArticleViewController: UIViewController {
     
     public var autoColored: Bool = false
     
-    public var image: UIImage? {
+    public var image: UIImage = UIImage() {
         didSet {
             imageView.image = image
         }
@@ -34,14 +34,12 @@ public class ArticleViewController: UIViewController {
         }
     }
     
-    public var date: NSDate? {
+    public var date: NSDate = NSDate() {
         didSet {
-            if let date = date {
-                let formatter = NSDateFormatter()
-                formatter.dateStyle = .MediumStyle
-                formatter.timeStyle = .LongStyle
-                dateLabel.text = formatter.stringFromDate(date)
-            }
+            let formatter = NSDateFormatter()
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .LongStyle
+            dateLabel.text = formatter.stringFromDate(date)
         }
     }
     
@@ -69,7 +67,7 @@ public class ArticleViewController: UIViewController {
         
         // if autoColored, setup after extracting color; otherwise, setup now.
         if autoColored {
-            image?.getColors { colors in
+            image.getColors { colors in
                 self.backgroundView.backgroundColor = colors.backgroundColor
                 self.view.backgroundColor = colors.backgroundColor
                 self.headlineLabel.textColor = colors.primaryColor
