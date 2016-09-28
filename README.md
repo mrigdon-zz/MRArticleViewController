@@ -9,6 +9,7 @@ This framework allows you to easily setup View Controllers to display News Artic
 
 ![Preview](https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview1.png)
 ![Preview](https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview2.png)
+![Preview](https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview3.png)
 
 ## Example
 
