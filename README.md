@@ -51,11 +51,21 @@ pod "MRArticleViewController"
       date = NSDate()
       body = bodyText
 
-      // optional; defaults to false
+      // optional; defaults to false. If left false, the background will be white and all the text will be black.
       autoColored = true
 
       super.viewDidLoad()
   }
+  ```
+
+4. Optional: If you aren't satisfied with either the default coloring, or autoColoring, you can set each element's color individually:
+
+  ```swift
+  backgroundColor = UIColor.blackColor()
+  headlineColor = UIColor.yellowColor()
+  authorColor = UIColor.orangeColor()
+  dateColor = UIColor.grayColor()
+  bodyColor = UIColor.grayColor()
   ```
   
 Done!
