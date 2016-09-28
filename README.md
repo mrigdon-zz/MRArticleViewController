@@ -25,7 +25,7 @@ MRArticleViewController is available through [CocoaPods](http://cocoapods.org). 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "MRArticleViewController"
+pod 'MRArticleViewController'
 ```
 
 ## Usage
@@ -76,13 +76,19 @@ pod "MRArticleViewController"
   
 Done!
 
-#### More on `autoColor`
+## More on `autoColor`
 
 This library leverages [UIImageColors](https://github.com/jathu/UIImageColors). Setting `autoColor = true` extracts the colors from the `image` and applies the 
 * background color to the background
 * the primary color to the headline
 * the detail color to the date and body
-* and the secondary color to the author. 
+* and the secondary color to the author.
+
+If you don't want the UIImageColors dependency that provides the `autoColor` feature, I've created a separate branch called `lite`. You can install that library like so:
+
+```ruby
+pod 'MRArticleViewController', :git => 'https://github.com/mrigdon/MRArticleViewController.git', :branch => 'lite'
+```
 
 ## Author
 
