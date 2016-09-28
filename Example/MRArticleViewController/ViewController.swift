@@ -16,11 +16,11 @@ class ViewController: ArticleViewController {
 
     override func viewDidLoad() {
         image = UIImage(named: "pulpfiction")
-        autoColor()
         headline = "LA gangsters witness supposed \"Divine Intervention\""
         author = "Quentin Tarantino"
         date = NSDate()
         body = bodyText
+        autoColored = true
         
         super.viewDidLoad()
     }
