@@ -17,7 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Swift 2.X
+Swift 2.x (Working on Swift 3 support)
 
 ## Installation
 
@@ -89,6 +89,10 @@ If you don't want the UIImageColors dependency that provides the `autoColor` fea
 ```ruby
 pod 'MRArticleViewController', :git => 'https://github.com/mrigdon/MRArticleViewController.git', :branch => 'lite'
 ```
+
+## TODO
+
+- [ ] Swift 3 support (working on it out of 'swift3' branch)
 
 ## Author
 
