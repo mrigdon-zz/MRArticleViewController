@@ -7,48 +7,48 @@
 //
 
 import UIKit
-import UIImageColors
+//import UIImageColors
 
-public class ArticleViewController: UIViewController {
+open class ArticleViewController: UIViewController {
     
     // MARK: - Public Properties
     
-    public var autoColored: Bool = false
+    open var autoColored: Bool = false
     
-    public var image: UIImage = UIImage() {
+    open var image: UIImage = UIImage() {
         didSet {
             imageView.image = image
         }
     }
     
-    public var headline: String = "" {
+    open var headline: String = "" {
         didSet {
             headlineLabel.text = headline
         }
     }
     
-    public var author: String = "" {
+    open var author: String = "" {
         didSet {
             authorLabel.text = "by \(author)"
         }
     }
     
-    public var date: NSDate = NSDate() {
+    open var date: Date = Date() {
         didSet {
-            let formatter = NSDateFormatter()
-            formatter.dateStyle = .MediumStyle
-            formatter.timeStyle = .LongStyle
-            dateLabel.text = formatter.stringFromDate(date)
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .long
+            dateLabel.text = formatter.string(from: date)
         }
     }
     
-    public var body: String = "" {
+    open var body: String = "" {
         didSet {
             bodyLabel.text = body
         }
     }
     
-    public var backgroundColor: UIColor = UIColor.whiteColor() {
+    open var backgroundColor: UIColor = UIColor.white {
         didSet {
             backgroundColorSet = true
             backgroundView.backgroundColor = backgroundColor
@@ -56,28 +56,28 @@ public class ArticleViewController: UIViewController {
         }
     }
     
-    public var headlineColor: UIColor = UIColor.blackColor() {
+    open var headlineColor: UIColor = UIColor.black {
         didSet {
             headlineColorSet = true
             headlineLabel.textColor = headlineColor
         }
     }
     
-    public var dateColor: UIColor = UIColor.blackColor() {
+    open var dateColor: UIColor = UIColor.black {
         didSet {
             dateColorSet = true
             dateLabel.textColor = dateColor
         }
     }
     
-    public var authorColor: UIColor = UIColor.blackColor() {
+    open var authorColor: UIColor = UIColor.black {
         didSet {
             authorColorSet = true
             authorLabel.textColor = authorColor
         }
     }
     
-    public var bodyColor: UIColor = UIColor.blackColor() {
+    open var bodyColor: UIColor = UIColor.black {
         didSet {
             bodyColorSet = true
             bodyLabel.textColor = bodyColor
@@ -86,49 +86,49 @@ public class ArticleViewController: UIViewController {
     
     // MARK: - Private Properties
     
-    private let scrollView = UIScrollView()
-    private let backgroundView = UIView()
-    private let imageView = UIImageView()
-    private let headlineLabel = UILabel()
-    private let authorLabel = UILabel()
-    private let dateLabel = UILabel()
-    private let divider = UIView()
-    private let bodyLabel = UILabel()
+    fileprivate let scrollView = UIScrollView()
+    fileprivate let backgroundView = UIView()
+    fileprivate let imageView = UIImageView()
+    fileprivate let headlineLabel = UILabel()
+    fileprivate let authorLabel = UILabel()
+    fileprivate let dateLabel = UILabel()
+    fileprivate let divider = UIView()
+    fileprivate let bodyLabel = UILabel()
     
-    private var backgroundColorSet = false
-    private var headlineColorSet = false
-    private var dateColorSet = false
-    private var authorColorSet = false
-    private var bodyColorSet = false
+    fileprivate var backgroundColorSet = false
+    fileprivate var headlineColorSet = false
+    fileprivate var dateColorSet = false
+    fileprivate var authorColorSet = false
+    fileprivate var bodyColorSet = false
 
     // MARK: - UIViewController
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         // if autoColored, setup after extracting color; otherwise, setup now.
         if autoColored {
-            image.getColors { colors in
-                self.backgroundColor = self.backgroundColorSet ? self.backgroundColor : colors.backgroundColor
-                self.headlineColor = self.headlineColorSet ? self.headlineColor : colors.primaryColor
-                self.dateColor = self.dateColorSet ? self.dateColor : colors.detailColor
-                self.authorColor = self.authorColorSet ? self.authorColor : colors.secondaryColor
-                self.bodyColor = self.bodyColorSet ? self.bodyColor : colors.detailColor
-                
-                self.setupUI()
-            }
+//            image.getColors { colors in
+//                self.backgroundColor = self.backgroundColorSet ? self.backgroundColor : colors.backgroundColor
+//                self.headlineColor = self.headlineColorSet ? self.headlineColor : colors.primaryColor
+//                self.dateColor = self.dateColorSet ? self.dateColor : colors.detailColor
+//                self.authorColor = self.authorColorSet ? self.authorColor : colors.secondaryColor
+//                self.bodyColor = self.bodyColorSet ? self.bodyColor : colors.detailColor
+//                
+//                self.setupUI()
+//            }
         } else {
             setupUI()
         }
     }
 
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     // MARK: - Private Methods
     
-    private func setupUI() {
+    fileprivate func setupUI() {
         setupScrollView()
         setupImageView()
         setupHeadline()
@@ -137,72 +137,72 @@ public class ArticleViewController: UIViewController {
         setupBody()
     }
     
-    private func setupScrollView() {
+    fileprivate func setupScrollView() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(scrollView)
-        NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: scrollView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: scrollView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1, constant: 0).active = true
+        NSLayoutConstraint(item: scrollView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: scrollView, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: scrollView, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: scrollView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(backgroundView)
-        NSLayoutConstraint(item: backgroundView, attribute: .Top, relatedBy: .Equal, toItem: scrollView, attribute: .Top, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: backgroundView, attribute: .Left, relatedBy: .Equal, toItem: scrollView, attribute: .Left, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: backgroundView, attribute: .Right, relatedBy: .Equal, toItem: scrollView, attribute: .Right, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: backgroundView, attribute: .Bottom, relatedBy: .Equal, toItem: scrollView, attribute: .Bottom, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: backgroundView, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: view.bounds.width).active = true
+        NSLayoutConstraint(item: backgroundView, attribute: .top, relatedBy: .equal, toItem: scrollView, attribute: .top, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: backgroundView, attribute: .left, relatedBy: .equal, toItem: scrollView, attribute: .left, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: backgroundView, attribute: .right, relatedBy: .equal, toItem: scrollView, attribute: .right, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: backgroundView, attribute: .bottom, relatedBy: .equal, toItem: scrollView, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: backgroundView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: view.bounds.width).isActive = true
     }
     
-    private func setupImageView() {
+    fileprivate func setupImageView() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.addSubview(imageView)
-        NSLayoutConstraint(item: imageView, attribute: .Top, relatedBy: .Equal, toItem: backgroundView, attribute: .Top, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: imageView, attribute: .Left, relatedBy: .Equal, toItem: backgroundView, attribute: .Left, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: imageView, attribute: .Right, relatedBy: .Equal, toItem: backgroundView, attribute: .Right, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: imageView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: view.bounds.width).active = true
+        NSLayoutConstraint(item: imageView, attribute: .top, relatedBy: .equal, toItem: backgroundView, attribute: .top, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageView, attribute: .left, relatedBy: .equal, toItem: backgroundView, attribute: .left, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageView, attribute: .right, relatedBy: .equal, toItem: backgroundView, attribute: .right, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: view.bounds.width).isActive = true
     }
     
-    private func setupHeadline() {
+    fileprivate func setupHeadline() {
         headlineLabel.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.addSubview(headlineLabel)
-        NSLayoutConstraint(item: headlineLabel, attribute: .Top, relatedBy: .Equal, toItem: imageView, attribute: .Bottom, multiplier: 1, constant: 8).active = true
-        NSLayoutConstraint(item: headlineLabel, attribute: .Left, relatedBy: .Equal, toItem: backgroundView, attribute: .Left, multiplier: 1, constant: 14).active = true
-        NSLayoutConstraint(item: headlineLabel, attribute: .Right, relatedBy: .Equal, toItem: backgroundView, attribute: .Right, multiplier: 1, constant: -24).active = true
+        NSLayoutConstraint(item: headlineLabel, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 8).isActive = true
+        NSLayoutConstraint(item: headlineLabel, attribute: .left, relatedBy: .equal, toItem: backgroundView, attribute: .left, multiplier: 1, constant: 14).isActive = true
+        NSLayoutConstraint(item: headlineLabel, attribute: .right, relatedBy: .equal, toItem: backgroundView, attribute: .right, multiplier: 1, constant: -24).isActive = true
         headlineLabel.numberOfLines = 0
         headlineLabel.sizeToFit()
         headlineLabel.font = UIFont(name: "HelveticaNeue-Light", size: 36)
     }
     
-    private func setupAuthor() {
+    fileprivate func setupAuthor() {
         authorLabel.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.addSubview(authorLabel)
-        NSLayoutConstraint(item: authorLabel, attribute: .Top, relatedBy: .Equal, toItem: headlineLabel, attribute: .Bottom, multiplier: 1, constant: 8).active = true
-        NSLayoutConstraint(item: authorLabel, attribute: .Left, relatedBy: .Equal, toItem: backgroundView, attribute: .Left, multiplier: 1, constant: 14).active = true
-        NSLayoutConstraint(item: authorLabel, attribute: .Right, relatedBy: .Equal, toItem: backgroundView, attribute: .Right, multiplier: 1, constant: -14).active = true
+        NSLayoutConstraint(item: authorLabel, attribute: .top, relatedBy: .equal, toItem: headlineLabel, attribute: .bottom, multiplier: 1, constant: 8).isActive = true
+        NSLayoutConstraint(item: authorLabel, attribute: .left, relatedBy: .equal, toItem: backgroundView, attribute: .left, multiplier: 1, constant: 14).isActive = true
+        NSLayoutConstraint(item: authorLabel, attribute: .right, relatedBy: .equal, toItem: backgroundView, attribute: .right, multiplier: 1, constant: -14).isActive = true
         authorLabel.numberOfLines = 0
         authorLabel.sizeToFit()
         authorLabel.font = UIFont(name: "HelveticaNeue-Medium", size: 12)
     }
     
-    private func setupDate() {
+    fileprivate func setupDate() {
         dateLabel.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.addSubview(dateLabel)
-        NSLayoutConstraint(item: dateLabel, attribute: .Top, relatedBy: .Equal, toItem: authorLabel, attribute: .Bottom, multiplier: 1, constant: 8).active = true
-        NSLayoutConstraint(item: dateLabel, attribute: .Left, relatedBy: .Equal, toItem: backgroundView, attribute: .Left, multiplier: 1, constant: 14).active = true
-        NSLayoutConstraint(item: dateLabel, attribute: .Right, relatedBy: .Equal, toItem: backgroundView, attribute: .Right, multiplier: 1, constant: -14).active = true
+        NSLayoutConstraint(item: dateLabel, attribute: .top, relatedBy: .equal, toItem: authorLabel, attribute: .bottom, multiplier: 1, constant: 8).isActive = true
+        NSLayoutConstraint(item: dateLabel, attribute: .left, relatedBy: .equal, toItem: backgroundView, attribute: .left, multiplier: 1, constant: 14).isActive = true
+        NSLayoutConstraint(item: dateLabel, attribute: .right, relatedBy: .equal, toItem: backgroundView, attribute: .right, multiplier: 1, constant: -14).isActive = true
         dateLabel.numberOfLines = 0
         dateLabel.sizeToFit()
         dateLabel.font = UIFont(name: "HelveticaNeue", size: 12)
     }
     
-    private func setupBody() {
+    fileprivate func setupBody() {
         bodyLabel.translatesAutoresizingMaskIntoConstraints = false
         backgroundView.addSubview(bodyLabel)
-        NSLayoutConstraint(item: bodyLabel, attribute: .Top, relatedBy: .Equal, toItem: dateLabel, attribute: .Bottom, multiplier: 1, constant: 20).active = true
-        NSLayoutConstraint(item: bodyLabel, attribute: .Left, relatedBy: .Equal, toItem: backgroundView, attribute: .Left, multiplier: 1, constant: 14).active = true
-        NSLayoutConstraint(item: bodyLabel, attribute: .Right, relatedBy: .Equal, toItem: backgroundView, attribute: .Right, multiplier: 1, constant: -14).active = true
-        NSLayoutConstraint(item: bodyLabel, attribute: .Bottom, relatedBy: .Equal, toItem: backgroundView, attribute: .Bottom, multiplier: 1, constant: -30).active = true
+        NSLayoutConstraint(item: bodyLabel, attribute: .top, relatedBy: .equal, toItem: dateLabel, attribute: .bottom, multiplier: 1, constant: 20).isActive = true
+        NSLayoutConstraint(item: bodyLabel, attribute: .left, relatedBy: .equal, toItem: backgroundView, attribute: .left, multiplier: 1, constant: 14).isActive = true
+        NSLayoutConstraint(item: bodyLabel, attribute: .right, relatedBy: .equal, toItem: backgroundView, attribute: .right, multiplier: 1, constant: -14).isActive = true
+        NSLayoutConstraint(item: bodyLabel, attribute: .bottom, relatedBy: .equal, toItem: backgroundView, attribute: .bottom, multiplier: 1, constant: -30).isActive = true
         bodyLabel.numberOfLines = 0
         bodyLabel.sizeToFit()
         bodyLabel.font = UIFont(name: "Georgia", size: 20)

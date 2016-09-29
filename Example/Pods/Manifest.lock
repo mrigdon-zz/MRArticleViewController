@@ -1,38 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.2):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
-  - FBSnapshotTestCase/Core (2.1.2)
-  - FBSnapshotTestCase/SwiftSupport (2.1.2):
-    - FBSnapshotTestCase/Core
-  - MRArticleViewController (0.1.0):
-    - UIImageColors
-  - Nimble (3.2.0)
-  - Nimble-Snapshots (4.1.0):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble
-    - Quick
-  - Quick (0.9.3)
-  - UIImageColors (1.0.4)
+  - MRArticleViewController (0.2.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - MRArticleViewController (from `../`)
-  - Nimble (~> 3.0)
-  - Nimble-Snapshots
-  - Quick (~> 0.8)
 
 EXTERNAL SOURCES:
   MRArticleViewController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  MRArticleViewController: 8a17d4f2a68d84bd06fe115be25f236c01ad605c
-  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
-  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
-  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
-  UIImageColors: ac2a42c61e870849c7fa5b9cbae2744a0873f5f7
+  MRArticleViewController: 320699d71ca9efbb19ff808f9681880671b153fe
 
-PODFILE CHECKSUM: ee70976c9b7ef4ddb6d46e4ef626db72b82bd155
+PODFILE CHECKSUM: adf7c91e141ecc034afe181641fbf253faba93e6
 
 COCOAPODS: 1.0.1

@@ -17,7 +17,7 @@ class ViewController: ArticleViewController {
         image = UIImage(named: "pulpfiction")!
         headline = "LA gangsters witness supposed \"Divine Intervention\""
         author = "Quentin Tarantino"
-        date = NSDate()
+        date = NSDate() as Date
         body = bodyText
         autoColored = true
         

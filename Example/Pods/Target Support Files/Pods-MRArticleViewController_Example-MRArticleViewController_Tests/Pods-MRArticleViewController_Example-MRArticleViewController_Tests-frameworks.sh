@@ -85,17 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MRArticleViewController/MRArticleViewController.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UIImageColors/UIImageColors.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Nimble/Nimble.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Nimble-Snapshots/Nimble_Snapshots.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Quick/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/MRArticleViewController/MRArticleViewController.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UIImageColors/UIImageColors.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Nimble/Nimble.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Nimble-Snapshots/Nimble_Snapshots.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Quick/Quick.framework"
 fi
