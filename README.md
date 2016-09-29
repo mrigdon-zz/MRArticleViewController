@@ -17,7 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-Swift 2.X
+Swift 3
 
 ## Installation
 
@@ -42,7 +42,7 @@ pod 'MRArticleViewController'
   class ViewController: ArticleViewController
   ```
 
-3. In `viewDidLoad`, set the following properties *before* `super.viewDidLoad()` like so:
+3. In `viewDidLoad`, set the following **required** properties *before* `super.viewDidLoad()`:
 
   ```swift
   override func viewDidLoad() {
@@ -53,18 +53,21 @@ pod 'MRArticleViewController'
       date = NSDate()
       body = bodyText
 
-      // optional; defaults to false. If left false, the background will be white and all the text will be black.
-      autoColored = true
-
       super.viewDidLoad()
   }
   ```
 
-4. Optional: If you aren't satisfied with either the default coloring, or autoColoring, you can set each element's color individually:
+4. Optional: In `viewDidLoad`, set the following **optional** properties *before* `super.viewDidLoad()`:
 
   ```swift
   ...
   
+  // Uses the algorithm from UIImageColors to extract the colors from the image and color the
+  // background, headline, author, date, and body accordingly. Defaults to false, but highly
+  // recommended to set to true. More on this feature below.
+  autoColored = true
+  
+  // If you don't like the autoColor feature, you can also color each component individually
   backgroundColor = UIColor.blackColor()
   headlineColor = UIColor.yellowColor()
   authorColor = UIColor.orangeColor()
@@ -74,21 +77,17 @@ pod 'MRArticleViewController'
   super.viewDidLoad()
   ```
   
-Done!
+Done! :beers:
 
-## More on `autoColor`
+## More on `autoColored`
 
-This library leverages [UIImageColors](https://github.com/jathu/UIImageColors). Setting `autoColor = true` extracts the colors from the `image` and applies the 
+This library leverages the algorithm from [UIImageColors](https://github.com/jathu/UIImageColors). Setting `autoColor = true` extracts the colors from the `image` and applies the 
 * background color to the background
 * the primary color to the headline
 * the detail color to the date and body
 * and the secondary color to the author.
 
-If you don't want the UIImageColors dependency that provides the `autoColor` feature, I've created a separate branch called `lite`. You can install that library like so:
-
-```ruby
-pod 'MRArticleViewController', :git => 'https://github.com/mrigdon/MRArticleViewController.git', :branch => 'lite'
-```
+Note that UIImageColors is not a dependency, the code has just been ported into this library.
 
 ## Author
 
@@ -96,4 +95,4 @@ Matthew Rigdon, rigdonmr@gmail.com
 
 ## License
 
-MRArticleViewController is available under the MIT license. See the LICENSE file for more info.
+MRArticleViewController is available under the MIT license. See the LICENSE file for more info. Please also refer to Panic's [original license](https://github.com/panicinc/ColorArt/#license) for the autoColor feature.
