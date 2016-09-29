@@ -12,6 +12,7 @@
 		1F23D60F64F3C62E51860B79315EDEBD /* Pods-MRArticleViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2E26F9103064BFDE540A80D97C9220 /* Pods-MRArticleViewController_Example-dummy.m */; };
 		32BEE613A6C3A7A9BD0FFA9F9B5BDE07 /* MRArticleViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524477C26B9A76B1AA8C5E97345A5D /* MRArticleViewController-dummy.m */; };
 		38E82CC6E92FDAC4A08C4DE9823A1A1E /* Pods-MRArticleViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08130D4F44799EBED1D63C7B3C3EF7BE /* Pods-MRArticleViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622D1BA11D9DB7230054CFFF /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622D1BA01D9DB7230054CFFF /* UIImageColors.swift */; };
 		78D54D33C49BFDD1C2E4EF041575D44B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		7D56CC7D44D46F61FCD63D64C44AFFF7 /* MRArticleViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BED93E1D37587971BDEB479345119AA /* MRArticleViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94495DE728C1BD97FAB7AB3E20F804AC /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C80137C36119E2E0BAE825F81D9A748B /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests-dummy.m */; };
@@ -52,6 +53,7 @@
 		3F8703F12B05199BAA301F6A7B38CBB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45AAA9AE5A996FA9D5080BAB7D090CF6 /* Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRArticleViewController_Example_MRArticleViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		552618D5EE9E92392CB477958FC06CD7 /* Pods-MRArticleViewController_Example-MRArticleViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRArticleViewController_Example-MRArticleViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		622D1BA01D9DB7230054CFFF /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
 		6BED93E1D37587971BDEB479345119AA /* MRArticleViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRArticleViewController-umbrella.h"; sourceTree = "<group>"; };
 		6ECFE3566DBAF4AF3CA8EB884EBF43AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8839D6E8FF28EB38C42CAC4A4BC879C0 /* MRArticleViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRArticleViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				1B55B8D5260BA74C2CE3F560BD9E6D50 /* ArticleViewController.swift */,
+				622D1BA01D9DB7230054CFFF /* UIImageColors.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622D1BA11D9DB7230054CFFF /* UIImageColors.swift in Sources */,
 				16FADCEABF92C81C09D099F631F949EC /* ArticleViewController.swift in Sources */,
 				32BEE613A6C3A7A9BD0FFA9F9B5BDE07 /* MRArticleViewController-dummy.m in Sources */,
 			);

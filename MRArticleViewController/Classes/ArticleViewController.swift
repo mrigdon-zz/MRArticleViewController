@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import UIImageColors
 
 open class ArticleViewController: UIViewController {
     
@@ -108,20 +107,18 @@ open class ArticleViewController: UIViewController {
         
         // if autoColored, setup after extracting color; otherwise, setup now.
         if autoColored {
-//            image.getColors { colors in
-//                self.backgroundColor = self.backgroundColorSet ? self.backgroundColor : colors.backgroundColor
-//                self.headlineColor = self.headlineColorSet ? self.headlineColor : colors.primaryColor
-//                self.dateColor = self.dateColorSet ? self.dateColor : colors.detailColor
-//                self.authorColor = self.authorColorSet ? self.authorColor : colors.secondaryColor
-//                self.bodyColor = self.bodyColorSet ? self.bodyColor : colors.detailColor
-//                
-//                self.setupUI()
-//            }
+            image.getColors { colors in
+                self.backgroundColor = self.backgroundColorSet ? self.backgroundColor : colors.backgroundColor
+                self.headlineColor = self.headlineColorSet ? self.headlineColor : colors.primaryColor
+                self.dateColor = self.dateColorSet ? self.dateColor : colors.detailColor
+                self.authorColor = self.authorColorSet ? self.authorColor : colors.secondaryColor
+                self.bodyColor = self.bodyColorSet ? self.bodyColor : colors.detailColor
+                
+                self.setupUI()
+            }
         } else {
             setupUI()
         }
-        // delete this line when uiimage colors is done
-        setupUI()
     }
 
     override open func didReceiveMemoryWarning() {

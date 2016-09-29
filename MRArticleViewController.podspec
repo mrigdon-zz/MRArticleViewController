@@ -38,5 +38,4 @@ This framework allows you to easily setup View Controllers to display News Artic
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-# s.dependency 'UIImageColors'
 end
