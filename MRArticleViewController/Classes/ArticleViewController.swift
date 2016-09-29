@@ -120,6 +120,8 @@ open class ArticleViewController: UIViewController {
         } else {
             setupUI()
         }
+        // delete this line when uiimage colors is done
+        setupUI()
     }
 
     override open func didReceiveMemoryWarning() {
