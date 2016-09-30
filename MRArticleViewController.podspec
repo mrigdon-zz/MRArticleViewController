@@ -25,7 +25,7 @@ This framework allows you to easily setup View Controllers to display News Artic
   s.screenshots     = 'https://raw.githubusercontent.com/mrigdon/MRArticleViewController/master/preview1.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Matthew Rigdon' => 'rigdonmr@gmail.com' }
-  s.source           = { :git => 'https://github.com/mrigdon/MRArticleViewController.git', :tag => "v#{s.version}" }
+  s.source           = { :git => 'https://github.com/mrigdon/MRArticleViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
