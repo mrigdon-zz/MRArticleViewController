@@ -4,6 +4,11 @@ The changelog for `MRArticleViewController`. Also see the [releases](https://git
 
 --------------------------------------
 
+1.0.6
+-----
+
+Fixed example
+
 1.0.2 :tada:
 -----
 
