@@ -90,6 +90,13 @@ This library leverages the algorithm from [UIImageColors](https://github.com/jat
 
 Note that UIImageColors is not a dependency, the code has just been ported into this library.
 
+## To-do
+
+Want a feature you don't see? Submit an issue and I'll add it to the to-do list, or hack it yourself and submit a pull request.
+
+- [ ] Add new styles
+- [ ] Swift package manager
+
 ## Author
 
 Matthew Rigdon, rigdonmr@gmail.com
