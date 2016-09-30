@@ -4,11 +4,12 @@ The changelog for `MRArticleViewController`. Also see the [releases](https://git
 
 --------------------------------------
 
-1.0.0 :tada:
+1.0.2 :tada:
 -----
 
 - Swift 3
 - Removed UIImageColors as dependency
+- **Note**: had to jump to 1.0.2 rather than 1.0.0 due to a tagging mistake I made on the command line
 
 0.2.0
 -----
