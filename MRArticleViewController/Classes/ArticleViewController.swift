@@ -87,7 +87,7 @@ open class ArticleViewController: UIViewController {
     
     fileprivate let scrollView = UIScrollView()
     fileprivate let backgroundView = UIView()
-    fileprivate let imageView = UIImageView()
+    public let imageView = UIImageView()
     fileprivate let headlineLabel = UILabel()
     fileprivate let authorLabel = UILabel()
     fileprivate let dateLabel = UILabel()
