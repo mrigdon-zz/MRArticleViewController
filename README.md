@@ -17,7 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-- Swift 3: use v1.0.6
+- Swift 3: use current
 - Swift 2: use v0.2.0
 
 ## Installation
