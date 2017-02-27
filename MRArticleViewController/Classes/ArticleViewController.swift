@@ -10,15 +10,10 @@ import UIKit
 
 open class ArticleViewController: UIViewController {
     
-    // MARK: - Public Properties
+    // MARK: - Public properties
     
+    open let imageView = UIImageView()
     open var autoColored: Bool = false
-    
-    open var image: UIImage = UIImage() {
-        didSet {
-            imageView.image = image
-        }
-    }
     
     open var headline: String = "" {
         didSet {
@@ -87,7 +82,6 @@ open class ArticleViewController: UIViewController {
     
     fileprivate let scrollView = UIScrollView()
     fileprivate let backgroundView = UIView()
-    fileprivate let imageView = UIImageView()
     fileprivate let headlineLabel = UILabel()
     fileprivate let authorLabel = UILabel()
     fileprivate let dateLabel = UILabel()
@@ -107,7 +101,7 @@ open class ArticleViewController: UIViewController {
         
         // if autoColored, setup after extracting color; otherwise, setup now.
         if autoColored {
-            image.getColors { colors in
+            imageView.image?.getColors { colors in
                 self.backgroundColor = self.backgroundColorSet ? self.backgroundColor : colors.backgroundColor
                 self.headlineColor = self.headlineColorSet ? self.headlineColor : colors.primaryColor
                 self.dateColor = self.dateColorSet ? self.dateColor : colors.detailColor

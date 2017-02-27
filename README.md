@@ -48,7 +48,7 @@ pod 'MRArticleViewController'
   ```swift
   override func viewDidLoad() {
       // required
-      image = UIImage(named: "pulpfiction")!
+      imageView.image = UIImage(named: "pulpfiction")!
       headline = "LA gangsters witness supposed \"Divine Intervention\""
       author = "Quentin Tarantino"
       date = NSDate()
@@ -69,11 +69,11 @@ pod 'MRArticleViewController'
   autoColored = true
   
   // If you don't like the autoColor feature, you can also color each component individually
-  backgroundColor = UIColor.blackColor()
-  headlineColor = UIColor.yellowColor()
-  authorColor = UIColor.orangeColor()
-  dateColor = UIColor.grayColor()
-  bodyColor = UIColor.grayColor()
+  backgroundColor = UIColor.black
+  headlineColor = UIColor.yellow
+  authorColor = UIColor.orange
+  dateColor = UIColor.gray
+  bodyColor = UIColor.gray
   
   super.viewDidLoad()
   ```
